@@ -1,0 +1,140 @@
+// navber section start
+.navHero {
+  height: 100vh;
+  .header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        li {
+          a {
+            color: black;
+          }
+        }
+      }
+      .icon-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3 {
+          color: black;
+        }
+      }
+      .btn-area {
+        .btn {
+          background-color: #399f6e;
+          border-radius: 50px;
+          color: #ffff;
+          padding: {
+            top: 10px;
+            right: 20px;
+            bottom: 10px;
+            left: 20px;
+          }
+        }
+      }
+    }
+  }
+  //   hero section start
+  .hero {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .hero-section {
+      h4 {
+        padding-bottom: 4px;
+      }
+    }
+  }
+}
+// demos section
+.demo-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  color: black;
+  .demo-area {
+    .test {
+      padding-bottom: 10px;
+      .counters {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #399f6e;
+      }
+      h2 {
+        color: #676c7b;
+        padding-bottom: 20px;
+      }
+    }
+    .card-area {
+      .row {
+        padding-bottom: 10px;
+        .card {
+          box-shadow: 0px 5px 30px 0px rgba(219, 219, 219, 0.664);
+          border-radius: 10px;
+          transition: 1s;
+          &:hover {
+            transform: scale(1.03);
+            transition: 1s;
+          }
+          img {
+            height: 400px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// demo section card img scroll
+.window {
+  margin: auto;
+  cursor: n-resize;
+  img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    height: 270px;
+    transition: 8s all ease;
+
+    &:hover {
+      object-position: bottom;
+    }
+  }
+}
+// inner section
+.inner-section {
+  .inner-area {
+    .inner-text {
+      h2 {
+        text-align: center;
+        color: black;
+        padding: {
+          top: 1rem;
+          bottom: 1rem;
+        }
+      }
+      p {
+        text-align: center;
+        padding: {
+          left: 23rem;
+          right: 23rem;
+        }
+      }
+    }
+  }
+}
