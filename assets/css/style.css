@@ -24,6 +24,7 @@
 @import "../css/plugins/odometer-min.css";
 @import "../css/plugins/animate.css";
 @import "../css/plugins/quill.snow.css";
+@import "../css/plugins/fontawesome.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.36.0/tabler-icons.min.css");
 :root {
@@ -1838,36 +1839,68 @@ input[type=radio] {
     display: inherit !important;
   }
 }
-.navHero {
-  height: 100vh;
-}
-.navHero .header {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.navHero .header .container {
+.navber-content .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.navHero .header .container ul {
+.navber-content .container .navber-brand {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 0.5rem;
+}
+.navber-content .container .navber-brand img {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 0.5rem;
+}
+.navber-content .container .navber-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  margin-top: 1px;
+  margin-bottom: 1rem;
 }
-.navHero .header .container ul li a {
-  color: black;
+.navber-content .container .navber-nav #closes-navber i {
+  display: none;
+  position: absolute;
+  top: 2.5rem;
+  right: 9rem;
+  font-size: 30px;
+  cursor: pointer;
+  color: #181818;
 }
-.navHero .header .container .icon-area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.navber-content .container .navber-nav #closes-navber i:hover {
+  transform: rotate(90deg);
 }
-.navHero .header .container .icon-area h3 {
-  color: black;
+.navber-content .container .navber-nav .navber-item {
+  list-style: none;
 }
-.navHero .header .container .btn-area .btn {
+.navber-content .container .navber-nav .navber-item .navber-link {
+  text-transform: capitalize;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+.navber-content .container .navber-nav .navber-img {
+  width: 49px;
+  height: 49px;
+  background: #399f6e;
+  text-align: center;
+  margin-top: 0.8rem;
+  padding-top: 0.7rem;
+  border-radius: 8px;
+  margin-right: 0.5rem;
+  list-style: none;
+}
+.navber-content .container .btn-area .btn {
   background-color: #399f6e;
   border-radius: 50px;
   color: white;
@@ -1876,14 +1909,11 @@ input[type=radio] {
   padding-bottom: 10px;
   padding-left: 20px;
 }
-.navHero .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.navHero .hero .hero-section h4 {
-  padding-bottom: 4px;
+.navber-content .container .icons {
+  width: 40px;
+  height: auto;
+  font-size: 25px;
+  display: none;
 }
 
 .demo-section {
@@ -1912,20 +1942,37 @@ input[type=radio] {
   padding-bottom: 20px;
 }
 .demo-section .demo-area .card-area .row {
+  display: flex;
+  justify-content: center;
   padding-bottom: 10px;
 }
-.demo-section .demo-area .card-area .row .card {
+.demo-section .demo-area .card-area .row .col-lg-6 {
+  padding-bottom: 1rem;
+}
+.demo-section .demo-area .card-area .row .col-lg-6 .card {
   box-shadow: 0px 5px 30px 0px rgba(219, 219, 219, 0.664);
   border-radius: 10px;
   transition: 1s;
 }
-.demo-section .demo-area .card-area .row .card:hover {
+.demo-section .demo-area .card-area .row .col-lg-6 .card:hover {
   transform: scale(1.03);
   transition: 1s;
 }
-.demo-section .demo-area .card-area .row .card img {
+.demo-section .demo-area .card-area .row .col-lg-6 .card img {
   height: 400px;
   border-radius: 10px;
+}
+.demo-section .demo-area .card-area .row .col-lg-6 .buttonx {
+  padding-top: 3rem;
+}
+.demo-section .demo-area .card-area .row .col-lg-6 .buttonx a {
+  padding: 1rem 3rem;
+  background-color: #6ccda6;
+  color: white;
+  border-radius: 50px;
+}
+.demo-section .demo-area .card-area .row .col-lg-6 .buttonx a:hover {
+  background-color: #3bc08a;
 }
 
 .window {
@@ -2063,4 +2110,93 @@ input[type=radio] {
   border-radius: 50px;
   color: white;
   font-weight: 700;
+}
+
+.footers {
+  padding: 1rem 1rem;
+  background-color: rgb(23, 20, 20);
+}
+.footers .footers-area .row .footer-text {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.footers .footers-area .row .footer-text a {
+  color: #399f6e;
+  padding-left: 4px;
+}
+.footers .footers-area .row .footer-text a:hover {
+  text-decoration: underline;
+}
+.footers .footers-area .row .footer-icon {
+  text-align: end;
+}
+.footers .footers-area .row .footer-icon .face {
+  width: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  text-align: center;
+}
+.footers .footers-area .row .footer-icon i {
+  font-size: 20px;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 50px;
+  margin-left: 4px;
+}
+.footers .footers-area .row .footer-icon i:hover {
+  background-color: #399f6e;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .navHero .navber-content .container .navber-brand {
+    margin-top: 1.2rem;
+    font-size: 25px;
+  }
+  .navHero .navber-content .container .navber-nav {
+    position: fixed;
+    top: 0;
+    right: -105%;
+    width: 20rem;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    z-index: 1200;
+  }
+  .navHero .navber-content .container .navber-nav #closes-navber i {
+    display: block;
+    color: #399f6e;
+  }
+  .navHero .navber-content .container .navber-nav.active {
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    right: 0;
+  }
+  .navHero .navber-content .container .navber-nav .navber-item {
+    background: #80c5a3;
+    padding: 0.5rem 4rem;
+    border-radius: 50px;
+    margin-top: 1rem;
+  }
+  .navHero .navber-content .container .navber-nav .navber-item:hover {
+    color: #399f6e;
+  }
+  .navHero .navber-content .container .navber-nav .navber-item .navber-link {
+    font-size: 16px;
+  }
+  .navHero .navber-content .container .btn-area {
+    display: none;
+  }
+  .navHero .navber-content .container .icons {
+    display: block;
+  }
+  .navHero .navber-content .container .icons {
+    margin-top: 0.6rem;
+    font-size: 30px;
+  }
+  .inner-section .inner-area .inner-text p {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
