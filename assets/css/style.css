@@ -1839,34 +1839,39 @@ input[type=radio] {
     display: inherit !important;
   }
 }
-.navber-content .container {
+.navHero {
+  padding: 0.5rem 0;
+}
+.navHero .navber-content .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.navber-content .container .navber-brand {
+.navHero .navber-content .container .navber-brand {
   color: white;
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
   text-decoration: none;
-  text-align: center;
-  padding-left: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.navber-content .container .navber-brand img {
-  width: 36px;
-  height: 36px;
-  margin-bottom: 0.5rem;
+.navHero .navber-content .container .navber-brand img {
+  width: 40px;
+  height: 40px;
 }
-.navber-content .container .navber-nav {
+.navHero .navber-content .container .navber-brand .barnd-text {
+  padding-right: 1rem;
+  font-size: 30px;
+}
+.navHero .navber-content .container .navber-nav {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1px;
   margin-bottom: 1rem;
 }
-.navber-content .container .navber-nav #closes-navber i {
+.navHero .navber-content .container .navber-nav #closes-navber i {
   display: none;
   position: absolute;
   top: 2.5rem;
@@ -1875,41 +1880,47 @@ input[type=radio] {
   cursor: pointer;
   color: #181818;
 }
-.navber-content .container .navber-nav #closes-navber i:hover {
+.navHero .navber-content .container .navber-nav #closes-navber i:hover {
   transform: rotate(90deg);
 }
-.navber-content .container .navber-nav .navber-item {
+.navHero .navber-content .container .navber-nav .navber-item {
   list-style: none;
 }
-.navber-content .container .navber-nav .navber-item .navber-link {
+.navHero .navber-content .container .navber-nav .navber-item .navber-link {
   text-transform: capitalize;
   color: white;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
+  padding-right: 2rem;
 }
-.navber-content .container .navber-nav .navber-img {
-  width: 49px;
-  height: 49px;
-  background: #399f6e;
-  text-align: center;
-  margin-top: 0.8rem;
-  padding-top: 0.7rem;
-  border-radius: 8px;
-  margin-right: 0.5rem;
-  list-style: none;
+.navHero .navber-content .container .navber-nav .btn-areax {
+  display: none;
 }
-.navber-content .container .btn-area .btn {
-  background-color: #399f6e;
+.navHero .navber-content .container .navber-nav .btn-areax .btnx {
+  background-color: #80c5a3;
   border-radius: 50px;
   color: white;
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-left: 20px;
+  padding: 0.5rem 4rem;
+  margin-top: 1rem;
 }
-.navber-content .container .icons {
+.navHero .navber-content .container .navber-nav .btn-areax .btnx:hover {
+  background-color: #399f6e;
+}
+.navHero .navber-content .container .btn-area {
+  text-align: center;
+}
+.navHero .navber-content .container .btn-area .btn {
+  background-color: #80c5a3;
+  border-radius: 50px;
+  color: white;
+  padding: 0.5rem 4rem;
+}
+.navHero .navber-content .container .btn-area .btn:hover {
+  background-color: #399f6e;
+}
+.navHero .navber-content .container .icons {
   width: 40px;
   height: auto;
   font-size: 25px;
@@ -2174,16 +2185,20 @@ input[type=radio] {
     right: 0;
   }
   .navHero .navber-content .container .navber-nav .navber-item {
-    background: #80c5a3;
+    background-color: #80c5a3;
     padding: 0.5rem 4rem;
     border-radius: 50px;
     margin-top: 1rem;
   }
   .navHero .navber-content .container .navber-nav .navber-item:hover {
-    color: #399f6e;
+    background-color: #399f6e;
   }
   .navHero .navber-content .container .navber-nav .navber-item .navber-link {
     font-size: 16px;
+    padding-right: 0;
+  }
+  .navHero .navber-content .container .navber-nav .btn-areax {
+    display: block;
   }
   .navHero .navber-content .container .btn-area {
     display: none;
@@ -2196,6 +2211,29 @@ input[type=radio] {
     font-size: 30px;
   }
   .inner-section .inner-area .inner-text p {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .features .container .features-text p {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .footers .footers-area .row .footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  .footers .footers-area .row .footer-icon {
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .inner-section .inner-area .inner-text p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .features .container .features-text p {
     padding-left: 0;
     padding-right: 0;
   }
