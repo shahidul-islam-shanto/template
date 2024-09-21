@@ -50,8 +50,8 @@
 
 // navber area
 .navHero {
-  padding: 0.5rem 0;
   .navber-content {
+    padding: 0.8rem 0;
     .container {
       display: flex;
       justify-content: space-between;
@@ -78,8 +78,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 1px;
-        margin-bottom: 1rem;
 
         #closes-navber {
           i {
@@ -116,7 +114,7 @@
             background-color: #80c5a3;
             border-radius: 50px;
             color: #ffff;
-            padding: 0.5rem 4rem;
+            padding: 0.7rem 4rem;
             margin-top: 1rem;
 
             &:hover {
@@ -143,6 +141,28 @@
         height: auto;
         font-size: 25px;
         display: none;
+      }
+    }
+  }
+  .hero{
+    padding: 10rem 0;
+    .hero-section{
+      h1{
+        text-align: center;
+        padding: 0 4rem;
+      }
+      .hero-button{
+        padding: 1rem 0;
+        text-align: center;
+        margin-top: 1rem;
+        a{
+          padding: 1rem 4rem;
+          background-color: #399f6e;
+          border-radius: 50px;
+          text-align: center;
+          color: #ffff;
+          margin-left: 1rem;
+        }
       }
     }
   }
@@ -499,7 +519,7 @@
     .navber-content {
       .container {
         .navber-brand {
-          margin-top: 1.2rem;
+          // margin-top: 1.2rem;
           font-size: 25px;
         }
         .navber-nav {
@@ -551,6 +571,13 @@
         .icons {
           margin-top: 0.6rem;
           font-size: 30px;
+        }
+      }
+    }
+    .hero{
+      .hero-section{
+        h1{
+          padding: 0;
         }
       }
     }

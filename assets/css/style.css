@@ -1839,8 +1839,8 @@ input[type=radio] {
     display: inherit !important;
   }
 }
-.navHero {
-  padding: 0.5rem 0;
+.navHero .navber-content {
+  padding: 0.8rem 0;
 }
 .navHero .navber-content .container {
   display: flex;
@@ -1868,8 +1868,6 @@ input[type=radio] {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1px;
-  margin-bottom: 1rem;
 }
 .navHero .navber-content .container .navber-nav #closes-navber i {
   display: none;
@@ -1902,7 +1900,7 @@ input[type=radio] {
   background-color: #80c5a3;
   border-radius: 50px;
   color: white;
-  padding: 0.5rem 4rem;
+  padding: 0.7rem 4rem;
   margin-top: 1rem;
 }
 .navHero .navber-content .container .navber-nav .btn-areax .btnx:hover {
@@ -1925,6 +1923,26 @@ input[type=radio] {
   height: auto;
   font-size: 25px;
   display: none;
+}
+.navHero .hero {
+  padding: 10rem 0;
+}
+.navHero .hero .hero-section h1 {
+  text-align: center;
+  padding: 0 4rem;
+}
+.navHero .hero .hero-section .hero-button {
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 1rem;
+}
+.navHero .hero .hero-section .hero-button a {
+  padding: 1rem 4rem;
+  background-color: #399f6e;
+  border-radius: 50px;
+  text-align: center;
+  color: white;
+  margin-left: 1rem;
 }
 
 .demo-section {
@@ -2162,7 +2180,6 @@ input[type=radio] {
 
 @media (max-width: 991px) {
   .navHero .navber-content .container .navber-brand {
-    margin-top: 1.2rem;
     font-size: 25px;
   }
   .navHero .navber-content .container .navber-nav {
@@ -2209,6 +2226,9 @@ input[type=radio] {
   .navHero .navber-content .container .icons {
     margin-top: 0.6rem;
     font-size: 30px;
+  }
+  .navHero .hero .hero-section h1 {
+    padding: 0;
   }
   .inner-section .inner-area .inner-text p {
     padding-left: 6rem;
