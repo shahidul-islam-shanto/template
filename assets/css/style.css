@@ -1176,7 +1176,7 @@ iframe {
 }
 
 *::-webkit-scrollbar-track {
-  background: rgba(var(--n5), 1);
+  background: white;
 }
 
 *::-webkit-scrollbar {
@@ -1185,7 +1185,7 @@ iframe {
 
 *::-webkit-scrollbar-button,
 *::-webkit-scrollbar-thumb {
-  background: rgba(var(--s2), 1);
+  background: #399f6e;
 }
 
 .cus-scrollbar {

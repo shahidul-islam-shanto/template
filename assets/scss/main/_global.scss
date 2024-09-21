@@ -84,26 +84,26 @@ h6>a,
 	}
 }
 
-a {
+// a {
 
-	h2,
-	h3,
-	h4,
-	h5,
-	span,
-	i,
-	.fs-two,
-	.fs-three,
-	.fs-four,
-	.fs-five {
-		// transition: var(--transition);
+// 	h2,
+// 	h3,
+// 	h4,
+// 	h5,
+// 	span,
+// 	i,
+// 	.fs-two,
+// 	.fs-three,
+// 	.fs-four,
+// 	.fs-five {
+// 		// transition: var(--transition);
 
-		&:hover {
-			// color: rgba(var(--s2), 1);
-			// transition: var(--transition) !important;
-		}
-	}
-}
+// 		&:hover {
+// 			// color: rgba(var(--s2), 1);
+// 			// transition: var(--transition) !important;
+// 		}
+// 	}
+// }
 
 .roboto {
 	font-family: var(--roboto-font);
@@ -987,7 +987,7 @@ iframe {
 
 // Custom Dropdown 
 *::-webkit-scrollbar-track {
-	background: rgba(var(--n5), 1);
+	background: rgba(#ffff, 1);
 }
 
 *::-webkit-scrollbar {
@@ -996,7 +996,7 @@ iframe {
 
 *::-webkit-scrollbar-button,
 *::-webkit-scrollbar-thumb {
-	background: rgba(var(--s2), 1);
+	background: rgba(#399f6e, 1);
 }
 
 .cus-scrollbar {
