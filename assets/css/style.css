@@ -1897,26 +1897,20 @@ input[type=radio] {
   display: none;
 }
 .navHero .navber-content .container .navber-nav .btn-areax .btnx {
-  background-color: #80c5a3;
+  background-color: #399f6e;
   border-radius: 50px;
   color: white;
   padding: 0.7rem 4rem;
   margin-top: 1rem;
 }
-.navHero .navber-content .container .navber-nav .btn-areax .btnx:hover {
-  background-color: #399f6e;
-}
 .navHero .navber-content .container .btn-area {
   text-align: center;
 }
 .navHero .navber-content .container .btn-area .btn {
-  background-color: #80c5a3;
+  background-color: #399f6e;
   border-radius: 50px;
   color: white;
   padding: 0.5rem 4rem;
-}
-.navHero .navber-content .container .btn-area .btn:hover {
-  background-color: #399f6e;
 }
 .navHero .navber-content .container .icons {
   width: 40px;
@@ -2142,13 +2136,14 @@ input[type=radio] {
 }
 
 .footers {
-  padding: 1rem 1rem;
+  padding: 1rem 0rem;
   background-color: rgb(23, 20, 20);
 }
 .footers .footers-area .row .footer-text {
   display: flex;
   align-items: center;
   color: white;
+  padding-top: 0.5rem;
 }
 .footers .footers-area .row .footer-text a {
   color: #399f6e;
@@ -2166,14 +2161,17 @@ input[type=radio] {
      object-fit: cover;
   text-align: center;
 }
-.footers .footers-area .row .footer-icon i {
+.footers .footers-area .row .footer-icon a {
+  color: #399f6e;
+}
+.footers .footers-area .row .footer-icon a i {
   font-size: 20px;
   padding: 0.5rem;
   background-color: white;
   border-radius: 50px;
   margin-left: 4px;
 }
-.footers .footers-area .row .footer-icon i:hover {
+.footers .footers-area .row .footer-icon a i:hover {
   background-color: #399f6e;
   color: white;
 }

@@ -1,54 +1,4 @@
 // navber section start
-// .navHero {
-//   height: 100vh;
-//   .header {
-//     padding-top: 5px;
-//     padding-bottom: 5px;
-
-//     .container {
-//       display: flex;
-//       justify-content: space-between;
-//       align-items: center;
-
-//       .navUp {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         gap: 30px;
-
-//         li {
-//           a {
-//             color: black;
-//           }
-//         }
-//       }
-
-//       .icon-area {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         h3 {
-//           color: black;
-//         }
-//       }
-//     }
-//   }
-//   //   hero section start
-//   .hero {
-//     // height: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     text-align: center;
-//     .hero-section {
-//       h4 {
-//         padding-bottom: 4px;
-//       }
-//     }
-//   }
-// }
-
-// navber area
 .navHero {
   .navber-content {
     padding: 0.8rem 0;
@@ -69,7 +19,7 @@
           width: 40px;
           height: 40px;
         }
-        .barnd-text{
+        .barnd-text {
           padding-right: 1rem;
           font-size: 30px;
         }
@@ -111,29 +61,23 @@
         .btn-areax {
           display: none;
           .btnx {
-            background-color: #80c5a3;
+            background-color: #399f6e;
             border-radius: 50px;
             color: #ffff;
             padding: 0.7rem 4rem;
             margin-top: 1rem;
 
-            &:hover {
-              background-color: #399f6e;
-            }
+           
           }
         }
       }
       .btn-area {
         text-align: center;
         .btn {
-          background-color: #80c5a3;
+          background-color: #399f6e;
           border-radius: 50px;
           color: #ffff;
           padding: 0.5rem 4rem;
-        
-          &:hover {
-           background-color: #399f6e;
-          }
         }
       }
       .icons {
@@ -144,18 +88,18 @@
       }
     }
   }
-  .hero{
+  .hero {
     padding: 10rem 0;
-    .hero-section{
-      h1{
+    .hero-section {
+      h1 {
         text-align: center;
         padding: 0 4rem;
       }
-      .hero-button{
+      .hero-button {
         padding: 1rem 0;
         text-align: center;
         margin-top: 1rem;
-        a{
+        a {
           padding: 1rem 4rem;
           background-color: #399f6e;
           border-radius: 50px;
@@ -168,53 +112,6 @@
   }
 }
 
-// // hero section
-// .hero-header {
-
-//   height: 110vh;
-//   .hero-container {
-//     height: 105vh;
-
-//     .hero-area {
-//       padding-top: 0.5rem;
-//       // display: flex;
-//       .text-area {
-//         // width: 35%;
-//         padding-right: 2rem;
-
-//         margin: auto;
-
-//         h2 {
-//           width: 335px;
-//           .bolText {
-//             font-weight: bolder;
-//           }
-//         }
-//         p {
-//           width: 251px;
-//           margin-bottom: 1rem;
-//         }
-//         .btn {
-//           background-color: $text-color;
-//           color: $white;
-//         }
-//       }
-//       .img-area {
-//         // width: 65%;
-//         height: 517.516px;
-//         margin-top: 3rem;
-//         padding-top: 3rem;
-
-//         img {
-//           width: 90%;
-//           height: auto;
-//           object-fit: cover;
-//           margin-left: 5rem;
-//         }
-//       }
-//     }
-//   }
-// }
 // demos section
 .demo-section {
   padding: {
@@ -464,7 +361,7 @@
 
 // footer section start
 .footers {
-  padding: 1rem 1rem;
+  padding: 1rem 0rem;
 
   background-color: rgb(23, 20, 20);
   .footers-area {
@@ -473,6 +370,7 @@
         display: flex;
         align-items: center;
         color: #ffff;
+        padding-top: 0.5rem;
         a {
           color: #399f6e;
           padding-left: 4px;
@@ -489,15 +387,18 @@
           object-fit: cover;
           text-align: center;
         }
-        i {
-          font-size: 20px;
-          padding: 0.5rem;
-          background-color: white;
-          border-radius: 50px;
-          margin-left: 4px;
-          &:hover {
-            background-color: #399f6e;
-            color: #ffff;
+        a {
+          color: #399f6e;
+          i {
+            font-size: 20px;
+            padding: 0.5rem;
+            background-color: white;
+            border-radius: 50px;
+            margin-left: 4px;
+            &:hover {
+              background-color: #399f6e;
+              color: #ffff;
+            }
           }
         }
       }
@@ -574,9 +475,9 @@
         }
       }
     }
-    .hero{
-      .hero-section{
-        h1{
+    .hero {
+      .hero-section {
+        h1 {
           padding: 0;
         }
       }
@@ -596,10 +497,10 @@
   }
 
   // features page
-  .features{
-    .container{
-      .features-text{
-        p{
+  .features {
+    .container {
+      .features-text {
+        p {
           padding-left: 6rem;
           padding-right: 6rem;
         }
@@ -607,16 +508,16 @@
     }
   }
   // footers page
-  .footers{
-    .footers-area{
-      .row{
-        .footer-text{
+  .footers {
+    .footers-area {
+      .row {
+        .footer-text {
           display: flex;
           justify-content: center;
           align-items: center;
           padding-bottom: 1rem;
         }
-        .footer-icon{
+        .footer-icon {
           text-align: center;
         }
       }
@@ -667,8 +568,8 @@
 }
 
 @media (max-width: 575px) {
-   // inner page
-   .inner-section {
+  // inner page
+  .inner-section {
     .inner-area {
       .inner-text {
         p {
@@ -680,10 +581,10 @@
   }
 
   // features page
-  .features{
-    .container{
-      .features-text{
-        p{
+  .features {
+    .container {
+      .features-text {
+        p {
           padding-left: 0;
           padding-right: 0;
         }
