@@ -1856,12 +1856,8 @@ input[type=radio] {
   justify-content: center;
   align-items: center;
 }
-.navHero .navber-content .container .navber-brand img {
-  width: 40px;
-  height: 40px;
-}
 .navHero .navber-content .container .navber-brand .barnd-text {
-  padding-right: 1rem;
+  padding-left: 0.3rem;
   font-size: 30px;
 }
 .navHero .navber-content .container .navber-nav {
@@ -1900,7 +1896,7 @@ input[type=radio] {
   background-color: #399f6e;
   border-radius: 50px;
   color: white;
-  padding: 0.7rem 4rem;
+  padding: 0.6rem 3rem;
   margin-top: 1rem;
 }
 .navHero .navber-content .container .btn-area {
@@ -1910,7 +1906,7 @@ input[type=radio] {
   background-color: #399f6e;
   border-radius: 50px;
   color: white;
-  padding: 0.5rem 4rem;
+  padding: 0.6rem 3rem;
 }
 .navHero .navber-content .container .icons {
   width: 40px;
@@ -1925,13 +1921,22 @@ input[type=radio] {
   text-align: center;
   padding: 0 4rem;
 }
+.navHero .hero .hero-section h1 .hero-title {
+  color: #399f6e;
+}
+.navHero .hero .hero-section h1 .hero-title:hover {
+  text-decoration: underline;
+}
 .navHero .hero .hero-section .hero-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1rem 0;
   text-align: center;
   margin-top: 1rem;
 }
 .navHero .hero .hero-section .hero-button a {
-  padding: 1rem 4rem;
+  padding: 0.7rem 3rem;
   background-color: #399f6e;
   border-radius: 50px;
   text-align: center;
@@ -1940,8 +1945,7 @@ input[type=radio] {
 }
 
 .demo-section {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
   text-align: center;
   color: black;
 }
@@ -1953,12 +1957,14 @@ input[type=radio] {
   justify-content: center;
   align-items: center;
   color: #399f6e;
+  padding: 1rem 0;
 }
 .demo-section .demo-area .test .counters .odometer {
-  font-size: 80px;
+  font-size: 100px;
 }
 .demo-section .demo-area .test .counters .tops {
   font-size: 80px;
+  margin-top: 0.5rem;
 }
 .demo-section .demo-area .test h2 {
   color: #676c7b;
@@ -1989,13 +1995,10 @@ input[type=radio] {
   padding-top: 3rem;
 }
 .demo-section .demo-area .card-area .row .col-lg-6 .buttonx a {
-  padding: 1rem 3rem;
-  background-color: #6ccda6;
+  padding: 0.8rem 3rem;
+  background-color: #399f6e;
   color: white;
   border-radius: 50px;
-}
-.demo-section .demo-area .card-area .row .col-lg-6 .buttonx a:hover {
-  background-color: #3bc08a;
 }
 
 .window {
@@ -2028,8 +2031,8 @@ input[type=radio] {
 }
 .inner-section .inner-area .inner-text p {
   text-align: center;
-  padding-left: 23rem;
-  padding-right: 23rem;
+  padding-left: 18rem;
+  padding-right: 18rem;
   padding-bottom: 1rem;
 }
 .inner-section .inner-area .inner-card .row .card-img {
@@ -2045,15 +2048,9 @@ input[type=radio] {
 }
 .inner-section .inner-area .inner-card .row .card-img .abou a {
   color: #ffffff;
-  background-color: #6ccda6;
+  background-color: #399f6e;
   border-radius: 50px;
-  padding-left: 3rem;
-  padding-top: 0.5rem;
-  padding-right: 3rem;
-  padding-bottom: 0.5rem;
-}
-.inner-section .inner-area .inner-card .row .card-img .abou a:hover {
-  background-color: #3bc08a;
+  padding: 0.8rem 3rem;
 }
 
 .features {
@@ -2068,15 +2065,16 @@ input[type=radio] {
 }
 .features .features-text p {
   text-align: center;
-  padding-left: 26rem;
-  padding-right: 26rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
   padding-bottom: 1rem;
 }
 .features .card-areas {
+  height: 100%;
   box-shadow: 0px 5px 30px 0px rgba(219, 219, 219, 0.555);
   border-radius: 20px;
   text-align: center;
-  padding: 32px 24px;
+  padding: 22px 10px;
 }
 .features .card-areas .imgs-area {
   background-color: #399f6e;
@@ -2093,14 +2091,14 @@ input[type=radio] {
 }
 .features .card-areas h4 {
   color: #676c7b;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .features .card-areas p {
   padding-top: 0.5rem;
 }
 
 .footer-header {
-  padding: 10rem 2rem;
+  padding: 6rem 2rem;
 }
 .footer-header .text-area .icon-area {
   display: flex;
@@ -2129,7 +2127,7 @@ input[type=radio] {
 }
 .footer-header .text-area .buttons .btn {
   background-color: #399f6e;
-  padding: 1rem 4rem;
+  padding: 0.8rem 3rem;
   border-radius: 50px;
   color: white;
   font-weight: 700;
@@ -2176,6 +2174,11 @@ input[type=radio] {
   color: white;
 }
 
+@media (max-width: 1199px) {
+  .navHero .hero {
+    padding: 4rem 0;
+  }
+}
 @media (max-width: 991px) {
   .navHero .navber-content .container .navber-brand {
     font-size: 25px;
@@ -2200,13 +2203,10 @@ input[type=radio] {
     right: 0;
   }
   .navHero .navber-content .container .navber-nav .navber-item {
-    background-color: #80c5a3;
+    background-color: #399f6e;
     padding: 0.5rem 4rem;
     border-radius: 50px;
     margin-top: 1rem;
-  }
-  .navHero .navber-content .container .navber-nav .navber-item:hover {
-    background-color: #399f6e;
   }
   .navHero .navber-content .container .navber-nav .navber-item .navber-link {
     font-size: 16px;
@@ -2225,6 +2225,9 @@ input[type=radio] {
     margin-top: 0.6rem;
     font-size: 30px;
   }
+  .navHero .hero {
+    padding: 3rem 0;
+  }
   .navHero .hero .hero-section h1 {
     padding: 0;
   }
@@ -2235,6 +2238,14 @@ input[type=radio] {
   .features .container .features-text p {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+}
+@media (max-width: 767px) {
+  .footer-header {
+    padding: 3rem 0;
+  }
+  .footer-header .text-area .text {
+    margin-top: 1rem;
   }
   .footers .footers-area .row .footer-text {
     display: flex;
@@ -2247,6 +2258,19 @@ input[type=radio] {
   }
 }
 @media (max-width: 575px) {
+  .navHero .hero {
+    padding: 2rem 0;
+  }
+  .navHero .hero .hero-section h1 {
+    padding: 4px;
+  }
+  .navHero .hero .hero-section .hero-button {
+    display: flex;
+    flex-direction: column;
+  }
+  .navHero .hero .hero-section .hero-button a {
+    margin-top: 1rem;
+  }
   .inner-section .inner-area .inner-text p {
     padding-left: 0;
     padding-right: 0;
@@ -2254,5 +2278,11 @@ input[type=radio] {
   .features .container .features-text p {
     padding-left: 0;
     padding-right: 0;
+  }
+  .footer-header {
+    padding: 2rem 0;
+  }
+  .footer-header .text-area .text {
+    margin-top: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

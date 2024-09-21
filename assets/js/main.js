@@ -14,8 +14,6 @@ closesBtn.addEventListener("click", function () {
 
 
 
-
-
 // / Odometer Init
 $(document).ready(function () {
   $(".odometer").each(function () {
