@@ -119,8 +119,9 @@
 
 // demos section
 .demo-section {
-  padding: 2rem 0;
+  padding: 40px 0;
   text-align: center;
+
   color: black;
   .demo-area {
     .test {
@@ -130,7 +131,7 @@
         justify-content: center;
         align-items: center;
         color: #399f6e;
-         padding: 1rem 0;
+        padding: 1rem 0;
         .odometer {
           font-size: 100px;
         }
@@ -141,7 +142,7 @@
       }
       h2 {
         color: #676c7b;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
       }
     }
     .card-area {
@@ -188,6 +189,7 @@
     width: 100%;
     object-fit: cover;
     object-position: top;
+    border-radius: 10px;
     height: 270px;
     transition: 10s all ease;
 
@@ -198,35 +200,28 @@
 }
 // inner section
 .inner-section {
-  padding: {
-    top: 0.5rem;
-    bottom: 0.5rem;
-  }
+  padding: 40px 0;
+
   .inner-area {
     .inner-text {
       h2 {
         text-align: center;
         color: black;
-        padding: {
-          top: 1rem;
-          bottom: 1rem;
-        }
+        padding-bottom: 10px;
       }
       p {
         text-align: center;
         padding: {
           left: 18rem;
           right: 18rem;
-          bottom: 1rem;
+          bottom: 3rem;
         }
       }
     }
     .inner-card {
       .row {
         .card-img {
-          padding: {
-            bottom: 1rem;
-          }
+          padding-bottom: 1rem;
           border-radius: 10px;
           .card {
             border-radius: 10px;
@@ -234,7 +229,7 @@
 
           .abou {
             text-align: center;
-            margin-top: 24px;
+            margin-top: 36px;
 
             a {
               color: #ffffff;
@@ -251,25 +246,19 @@
 
 // features section
 .features {
-  padding: {
-    top: 1rem;
-    bottom: 2rem;
-  }
+  padding: 60px 0;
   .features-text {
     h2 {
       text-align: center;
       color: black;
-      padding: {
-        top: 0.5rem;
-        bottom: 1rem;
-      }
+      padding-bottom: 2rem;
     }
     p {
       text-align: center;
       padding: {
         left: 20rem;
         right: 20rem;
-        bottom: 1rem;
+        bottom: 3rem;
       }
     }
   }
@@ -279,7 +268,11 @@
     border-radius: 20px;
     text-align: center;
     padding: 22px 10px;
-
+    transition: 0.5s;
+    &:hover{
+      transition: 0.5s;
+      transform: scale(1.1);
+    }
     .imgs-area {
       background-color: #399f6e;
       display: inline-block;
@@ -494,7 +487,6 @@
       }
     }
   }
- 
 }
 
 @media (max-width: 767px) {
@@ -508,8 +500,8 @@
     }
   }
 
-   // footers page
-   .footers {
+  // footers page
+  .footers {
     .footers-area {
       .row {
         .footer-text {

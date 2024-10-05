@@ -1945,7 +1945,7 @@ input[type=radio] {
 }
 
 .demo-section {
-  padding: 2rem 0;
+  padding: 40px 0;
   text-align: center;
   color: black;
 }
@@ -1968,7 +1968,7 @@ input[type=radio] {
 }
 .demo-section .demo-area .test h2 {
   color: #676c7b;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 .demo-section .demo-area .card-area .row {
   display: flex;
@@ -2011,6 +2011,7 @@ input[type=radio] {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  border-radius: 10px;
   height: 270px;
   transition: 10s all ease;
 }
@@ -2020,20 +2021,18 @@ input[type=radio] {
 }
 
 .inner-section {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 40px 0;
 }
 .inner-section .inner-area .inner-text h2 {
   text-align: center;
   color: black;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 10px;
 }
 .inner-section .inner-area .inner-text p {
   text-align: center;
   padding-left: 18rem;
   padding-right: 18rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 .inner-section .inner-area .inner-card .row .card-img {
   padding-bottom: 1rem;
@@ -2044,7 +2043,7 @@ input[type=radio] {
 }
 .inner-section .inner-area .inner-card .row .card-img .abou {
   text-align: center;
-  margin-top: 24px;
+  margin-top: 36px;
 }
 .inner-section .inner-area .inner-card .row .card-img .abou a {
   color: #ffffff;
@@ -2054,20 +2053,18 @@ input[type=radio] {
 }
 
 .features {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding: 60px 0;
 }
 .features .features-text h2 {
   text-align: center;
   color: black;
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 .features .features-text p {
   text-align: center;
   padding-left: 20rem;
   padding-right: 20rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 .features .card-areas {
   height: 100%;
@@ -2075,6 +2072,11 @@ input[type=radio] {
   border-radius: 20px;
   text-align: center;
   padding: 22px 10px;
+  transition: 0.5s;
+}
+.features .card-areas:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 .features .card-areas .imgs-area {
   background-color: #399f6e;
